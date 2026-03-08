@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Algoritimos</h1>
+    </header>
+    <nav>
+        <ul id="u_nav">
+            <li class="nav" onclick="pesquisa_linear(lista)">Pesquisa Linear</li>
+            <!-- <li class="nav">Ordenação</li> -->
+            <!-- <li class="nav" onclick="pesquisa_binaria(lista)">Pesquisa Binária</li> -->
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>Ordenação Original</h2>
+            <ul id="lista_original" class="lista_org"></ul>
+        </aside>
+        <div>
+            <span>Insira o numero a pesquisar e clique acima no tipo de pesquisa</span>
+            <input type="number">
+        </div>
+        <section>
+            <h2>Resultado</h2>
+            <ul id="resultados" class="lista_org"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
