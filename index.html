@@ -10,26 +10,29 @@
     <header>
         <h1>Algoritimos</h1>
     </header>
-    <nav>
-        <ul id="u_nav">
-            <li class="nav" onclick="pesquisa_linear(lista)">Pesquisa Linear</li>
-            <!-- <li class="nav">Ordenação</li> -->
-            <!-- <li class="nav" onclick="pesquisa_binaria(lista)">Pesquisa Binária</li> -->
-        </ul>
-    </nav>
+
     <main>
         <aside>
-            <h2>Ordenação Original</h2>
-            <ul id="lista_original" class="lista_org"></ul>
+            <h2>Base de Dados</h2>
+            <ul id="lista"></ul>
         </aside>
+
         <div>
-            <span>Insira o numero a pesquisar e clique acima no tipo de pesquisa</span>
+            <span>Insira o numero e clique no que precisa</span>
             <input type="number">
+            <nav>
+
+                <button class="nav" onclick="gerar_lista()">Gerar Lista</button>
+
+                <button class="nav" onclick="adicionar_na_lista()">Adicionar na Lista</button>
+
+                <button class="nav" onclick="remover_da_lista()">Remover da Lista</button>
+                
+                <button class="nav" onclick="limpar_lista()">Limpar Lista</button>
+
+                <button class="nav" onclick="pesquisa_linear()">Pesquisa Linear</button>
+            </nav>
         </div>
-        <section>
-            <h2>Resultado</h2>
-            <ul id="resultados" class="lista_org"></ul>
-        </section>
     </main>
     <script src="script.js"></script>
 </body>

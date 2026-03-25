@@ -2,41 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:cursive;
+    font-family: cursive;
 }
 
-h1{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 64px;
-    color: white;
+header{
+    padding: 20px;
     background-color: #0c3168;
 }
-#u_nav{
-    margin-top: 20px;
-    display: flex;
-    gap:30px;
-    justify-content: center;
+h1{
+    text-align: center;
+    font-size: 64px;
+    color: white;
 }
-.nav{
-    cursor: pointer;
-}
-li{
-    list-style-type: none;
-}
-input{
-    width: 100px;
-    height: 30px;
-    margin-top: 20px;
-}
+
 main{
     display: flex;
     width: 100%;
     justify-content:center;
-    /* align-items: center; */
 }
-section, aside{
-    width: 50%;
+aside{
+    width: 70%;
     text-align: center;
     background-color:#5184d1;
     color: white;
@@ -47,17 +32,38 @@ div{
     max-width: 120px;
     text-align: center;
 }
-.lista_org{
-    margin-top: 20px;
-    color: white;
-}
-.analisando{
-    background-color: yellow;
-    color: #0c3168;
+
+input{
+    width: 100px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
 }
 
-.encontrado{
-    background-color: lightgreen;
-    color:#0c3168;
-    font-weight: bold;
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #0c3168;
+    color: white;
+    width: 120px;
+    border-radius: 12px;
+}
+
+/*  */
+ul{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 4px;
 }
