@@ -19,24 +19,30 @@ main{
     display: flex;
     width: 100%;
     justify-content:center;
+    max-width: 1080px;
 }
-aside{
-    width: 70%;
+section{
+    width: 50%;
     text-align: center;
     background-color:#5184d1;
     color: white;
     margin: 20px;
 }
-div{
-    margin-top: 20px;
-    max-width: 120px;
+aside{
+    padding-top: 20px;
+
+    width: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
 }
 
 input{
     width: 100px;
     height: 30px;
-    margin: 20px 0;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -44,6 +50,7 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin: auto;
 }
 
 button{
@@ -61,6 +68,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 800px;
 }
 li{
     list-style-type: none;
